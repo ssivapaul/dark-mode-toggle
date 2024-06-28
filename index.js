@@ -1,7 +1,7 @@
 const inputEL = document.querySelector(".input");
 const bodyEL = document.querySelector("body");
 
-inputEL.checked = false;
+inputEL.checked = JSON.parse(localStorage.getItem("mode"));
 updateBody();
 
 function updateBody() {
