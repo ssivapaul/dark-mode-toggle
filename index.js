@@ -14,4 +14,9 @@ function updateBody() {
 
 inputEL.addEventListener("click", () => {
   updateBody();
+  updateLocalStorage();
 });
+
+function updateLocalStorage() {
+  localStorage.setItem("mode", JSON.stringify(inputEL.checked));
+}
