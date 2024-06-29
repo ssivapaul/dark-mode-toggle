@@ -15,7 +15,7 @@ body {
   position: absolute;
   width: 80px;
   height: 40px;
-  background-color: lightgray;
+  background-color: black;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -32,11 +32,12 @@ body {
 }
 
 .input:checked + .label {
-  background-color: salmon;
+  background-color: white;
 }
 
 .input:checked + .label .circle {
-  animation: toggleOn 1s linear forwards;
+  animation: toggleOn 3s linear forwards;
+  background-color: black;
 }
 
 .input + .label .circle {
